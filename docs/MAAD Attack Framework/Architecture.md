@@ -1,0 +1,12 @@
+# Design
+
+MAAD-AF is developed natively in [PowerShell 5.1](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-5.1) and leverages PowerShell modules to interact with various Microsoft cloud services. All MAAD-AF attack modules are open-source and modular by design making it easy to review, add, deprecate or update them for anyone. 
+
+| MAAD-AF Elements                                 | Details                                                                                                                                                                                                     |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `MAAD_Attack.ps1`                              | Primary controller of all MAAD-AF elements.                                                                                                                                                       |
+| `\Library`                                    | Hosts all the attack modules and other MAAD-AF functions.                                                                                                                                                         |
+| `\Library\MAAD_Basic_Modules.ps1`            | Primary functions required for MAAD-AF operation such as for logging, dependency checks, local file management, etc.                                                                                         |
+| `\Library\MAAD_Credential_Store_Manager.ps1` | Manages credentials locally for use during security testing.                                                                                                                                                |
+| `\Library\TOR_Anonymizer.ps1`                | Provides TOR routing feature for keeping MAAD-AF traffic anonymized.                                                                                                                                        |
+| `\Library\AccessModules.ps1`                 | Calls microsoft services and establishes connection using testing credentials. The established connections are kept persistent in the powershell session and are maintained even through a MAAD-AF restart. |

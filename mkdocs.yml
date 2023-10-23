@@ -1,0 +1,138 @@
+site_name: MAAD-AF
+theme:
+  name: material
+  language: en
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: Blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode   # Palette toggle for dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: Blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - navigation.indexes
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/vectra-ai-research/MAAD-AF
+repo_name: MAAD-AF
+
+plugins:
+  - search
+  - git-authors
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/vectra-ai-research
+
+nav:
+  - MAAD Attack Framework:
+      - MAAD Attack Framework: index.md
+      - Architecture: MAAD Attack Framework/Architecture.md
+      - Coverage: MAAD Attack Framework/Coverage.md
+      - PowerShell Modules: MAAD Attack Framework/PowerShell Modules.md
+      - Contributions: MAAD Attack Framework/Contributions.md
+  - Usage:
+      - Setup & Run: Usage/index.md
+      - Requirements: Usage/Requirements.md
+      - Sample Testing Paths: Usage/Testing Paths.md
+      - Troubleshoot: Usage/Troubleshoot.md
+  - MAAD-AF Modules:
+      - MAAD-AF Modules/index.md
+      - Pre-Attack:
+        - MAAD-AF Modules/Pre-Attack/Pre-Attack.md
+        - Recon Organization/Identity: MAAD-AF Modules/Pre-Attack/Recon Organization or Identity.md
+        - Brute-Force Credentials: MAAD-AF Modules/Pre-Attack/Brute-Force Credentials.md
+      - Recon:
+        - MAAD-AF Modules/Recon/Recon.md
+      - Access:
+        - MAAD-AF Modules/Access/Access.md
+        - Show Available Credentials: MAAD-AF Modules/Access/Show Available Credentials.md
+        - Add Credentials: MAAD-AF Modules/Access/Add Credentials.md
+        - Establish Access - All: MAAD-AF Modules/Access/Establish Access - All.md
+        - Establish Access - Azure AD: MAAD-AF Modules/Access/Establish Access - AzureAD.md
+        - Establish Access - Az: MAAD-AF Modules/Access/Establish Access - Az.md
+        - Establish Access - Exchange Online: MAAD-AF Modules/Access/Establish Access - Exchange Online.md
+        - Establish Access - Teams: MAAD-AF Modules/Access/Establish Access - Teams.md
+        - Establish Access - Msol: MAAD-AF Modules/Access/Establish Access - Msol.md
+        - Establish Access - Sharepoint Site: MAAD-AF Modules/Access/Establish Access - Sharepoint Site.md
+        - Establish Access - Sharepoint Admin Center: MAAD-AF Modules/Access/Establish Access - Sharepoint Admin Center.md
+        - Establish Access - Compliance (eDiscovery): MAAD-AF Modules/Access/Establish Access - Compliance eDiscovery.md
+        - Kill All Access: MAAD-AF Modules/Access/Kill All Access.md
+        - Anonymize Access with TOR: MAAD-AF Modules/Access/Anonymize Access with TOR.md
+      - Account:
+        - MAAD-AF Modules/Account/Account.md
+        - List Accounts in Tenant: MAAD-AF Modules/Account/List Accounts in Tenant.md
+        - Deploy Backdoor Account: MAAD-AF Modules/Account/Deploy Backdoor Account.md
+        - Assign Azure AD Role to Account: MAAD-AF Modules/Account/Assign Azure AD Role to Account.md
+        - Assign Management Role Account: MAAD-AF Modules/Account/Assign Management Role Account.md
+        - Reset Password: MAAD-AF Modules/Account/Reset Password.md
+        - Brute-Force Credentials: MAAD-AF Modules/Account/Brute-Force Credentials.md
+        - Disable Account MFA: MAAD-AF Modules/Account/Disable Account MFA.md
+        - Delete User: MAAD-AF Modules/Account/Delete User.md
+      - Group:
+        - MAAD-AF Modules/Group/Group.md
+        - List Groups in Tenant: MAAD-AF Modules/Group/List Groups in Tenant.md
+        - Create Group: MAAD-AF Modules/Group/Create Group.md
+        - Add user to Group: MAAD-AF Modules/Group/Add user to Group.md
+        - Assign Role to Group: MAAD-AF Modules/Group/Assign Role to Group.md
+      - Application:
+        - MAAD-AF Modules/Application/Application.md
+        - List Applications in Tenant: MAAD-AF Modules/Application/List Applications in Tenant.md
+        - Create Application: MAAD-AF Modules/Application/Create Application.md
+        - Generate new Application Credentials: MAAD-AF Modules/Application/Generate new Application Credentials.md
+      - AzureAD:
+        - MAAD-AF Modules/AzureAD/AzureAD.md
+        - Modify Trusted IP Config: MAAD-AF Modules/AzureAD/Modify Trusted IP Config.md
+        - Download All Account List: MAAD-AF Modules/AzureAD/Download All Account List.md
+        - Exploit Cross Tenant Sync: MAAD-AF Modules/AzureAD/Exploit Cross Tenant Sync.md
+      - Exchange:
+        - MAAD-AF Modules/Exchange/Exchange.md
+        - List Mailboxes in Tenant: MAAD-AF Modules/Exchange/List Mailboxes in Tenant.md
+        - Gain Access to Another Mailbox: MAAD-AF Modules/Exchange/Gain Access to Another Mailbox.md
+        - Setup Email Forwarding: MAAD-AF Modules/Exchange/Setup Email Forwarding.md
+        - Setup Email Deletion Rule: MAAD-AF Modules/Exchange/Setup Email Deletion Rule.md
+        - Disable Mailbox Auditing: MAAD-AF Modules/Exchange/Disable Mailbox Auditing.md
+        - Disable Anti-Phishing Policy: MAAD-AF Modules/Exchange/Disable Anti-Phishing Policy.md
+      - Teams:
+        - MAAD-AF Modules/Teams/Teams.md
+        - List Teams in Tenant: MAAD-AF Modules/Teams/List Teams in Tenant.md
+        - Search Creds in Teams: MAAD-AF Modules/Teams/Search Creds in Teams.md
+        - Invite External User to Teams: MAAD-AF Modules/Teams/Invite External User to Teams.md
+      - SharePoint:
+        - MAAD-AF Modules/SharePoint/SharePoint.md
+        - List Sharepoint Sites: MAAD-AF Modules/SharePoint/List Sharepoint Sites.md
+        - Gain Access to Sharepoint Site: MAAD-AF Modules/SharePoint/Gain Access to Sharepoint Site.md
+        - Search Files in Sharepoint: MAAD-AF Modules/SharePoint/Search Files in Sharepoint.md
+        - Exfiltrate Data from Sharepoint: MAAD-AF Modules/SharePoint/Exfiltrate Data from Sharepoint.md
+        - Upload File to Sharepoint Site: MAAD-AF Modules/SharePoint/Upload File to Sharepoint Site.md
+      - Compliance:
+        - MAAD-AF Modules/Compliance/Compliance.md
+        - Launch New eDiscovery Search: MAAD-AF Modules/Compliance/Launch New eDiscovery Search.md
+        - Recon Existing eDiscovery Cases: MAAD-AF Modules/Compliance/Recon Existing eDiscovery Cases.md
+        - Recon Existing eDiscovery Searches: MAAD-AF Modules/Compliance/Recon Existing eDiscovery Searches.md
+        - Find eDiscovery Search Details: MAAD-AF Modules/Compliance/Find eDiscovery Search Details.md
+        - Find eDiscovery Case Members: MAAD-AF Modules/Compliance/Find eDiscovery Case Members.md
+        - Exfil Data with eDiscovery: MAAD-AF Modules/Compliance/Exfil Data with eDiscovery.md
+        - Escalate eDiscovery Privileges: MAAD-AF Modules/Compliance/Escalate eDiscovery Privileges.md
+        - Install Unified Export Tool: MAAD-AF Modules/Compliance/Install Unified Export Tool.md
+  - FAQs: MAAD Attack Framework/FAQs.md
