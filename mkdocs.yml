@@ -38,7 +38,6 @@ plugins:
   - search
   - git-authors
 
-
 extra:
   social:
     - icon: fontawesome/brands/github-alt
